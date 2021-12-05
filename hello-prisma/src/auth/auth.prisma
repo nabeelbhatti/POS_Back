@@ -1,0 +1,7 @@
+model User {
+  id                Int                 @id @default(1)
+  userName          String?
+  name              String
+  password          String
+  size              Int?
+}

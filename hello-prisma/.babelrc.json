@@ -1,0 +1,21 @@
+{
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-throw-expressions",
+      ["module-resolver", {
+        "root": ["./src"],
+        "alias": {
+          "test": "./test"
+        }
+      }]
+    ]
+  }

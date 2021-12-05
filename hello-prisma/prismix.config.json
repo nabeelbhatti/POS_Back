@@ -1,0 +1,13 @@
+{
+    "mixers": [
+      {
+          "input": [
+              "src/_config/prisma/settings.prisma",
+              "src/auth/auth.prisma", 
+              "src/inventory/inventory.prisma",
+              "src/sales/sales.prisma"
+          ],
+          "output": "prisma/schema.prisma"
+      }
+    ]
+  }
