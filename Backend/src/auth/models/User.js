@@ -57,9 +57,7 @@ export const UserTC = schemaComposer.createObjectTC({
         const user = await prisma.user.create({
             data: args
         })
-
-        console.log(user)
-
+        
         return user
     }
 })

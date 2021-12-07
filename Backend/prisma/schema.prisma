@@ -17,17 +17,9 @@ model User {
 }
 
 model Product {
-  id                 Int         @id @default(1)
+  id                 Int    @id @default(1)
   productName        String
   productDescription String
   productPrice       Int
   size               Int
-  productType        ProductType @default(PHYSICAL)
-}
-
-enum ProductType {
-  PHYSICAL
-  SERVICE
-  DYNAMIC
-  CONSUMABLE
 }
